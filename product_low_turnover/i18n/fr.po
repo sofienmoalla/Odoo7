@@ -1,0 +1,134 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* product_low_turnover
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20140804-231303\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-15 08:45+0000\n"
+"PO-Revision-Date: 2014-09-15 08:45+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_low_turnover
+#: view:product.low.turnover:0
+#: field:product.low.turnover,categ_id:0
+msgid "Category"
+msgstr "Catégorie"
+
+#. module: product_low_turnover
+#: view:product.low.turnover:0
+#: view:product.turnover.report:0
+msgid "Product Report"
+msgstr "Product Report"
+
+#. module: product_low_turnover
+#: model:ir.actions.act_window,name:product_low_turnover.action_product_low_turnover
+msgid "Slow Moving Products"
+msgstr "Liste des produits à faible rotation"
+
+#. module: product_low_turnover
+#: view:product.low.turnover:0
+#: field:product.low.turnover,product_id:0
+msgid "Product"
+msgstr "Produit"
+
+#. module: product_low_turnover
+#: view:product.low.turnover:0
+#: field:product.low.turnover,product_brand_id:0
+msgid "Brand"
+msgstr "Marque"
+
+#. module: product_low_turnover
+#: field:product.low.turnover,uid:0
+msgid "User"
+msgstr "User"
+
+#. module: product_low_turnover
+#: model:ir.model,name:product_low_turnover.model_product_reporting
+msgid "product.reporting"
+msgstr "product.reporting"
+
+#. module: product_low_turnover
+#: field:product.turnover.report,date_to:0
+msgid "End Date"
+msgstr "Date fin"
+
+#. module: product_low_turnover
+#: model:ir.model,name:product_low_turnover.model_product_turnover_report
+msgid "product.turnover.report"
+msgstr "product.turnover.report"
+
+#. module: product_low_turnover
+#: model:ir.model,name:product_low_turnover.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: product_low_turnover
+#: model:ir.actions.act_window,name:product_low_turnover.action_product_turnover_report_wizard1
+#: model:ir.ui.menu,name:product_low_turnover.menu_non_eventual_product1
+msgid "List of slow moving products"
+msgstr "Produits à faible rotation"
+
+#. module: product_low_turnover
+#: model:ir.model,name:product_low_turnover.model_product_low_turnover
+msgid "product.low.turnover"
+msgstr "product.low.turnover"
+
+#. module: product_low_turnover
+#: field:product.low.turnover,list_price:0
+msgid "Price"
+msgstr "Prix"
+
+#. module: product_low_turnover
+#: model:ir.model,name:product_low_turnover.model_product_move_report1
+msgid "product.move.report1"
+msgstr "product.move.report1"
+
+#. module: product_low_turnover
+#: field:product.low.turnover,qty_available:0
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: product_low_turnover
+#: view:product.low.turnover:0
+msgid "Group by..."
+msgstr "Regrouper par..."
+
+#. module: product_low_turnover
+#: field:product.low.turnover,rate:0
+#: field:product.turnover.report,rate:0
+msgid "Rate"
+msgstr "Taux"
+
+#. module: product_low_turnover
+#: code:addons/product_low_turnover/wizard/product_slow_report.py:56
+#, python-format
+msgid "Rotation Low Product with %s %% Between %s and %s"
+msgstr "Produits à faible rotation moins de  %s %% entre %s et %s"
+
+#. module: product_low_turnover
+#: view:product.turnover.report:0
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: product_low_turnover
+#: field:product.turnover.report,date_from:0
+msgid "Start Date"
+msgstr "Date début"
+
+#. module: product_low_turnover
+#: view:product.turnover.report:0
+msgid "or"
+msgstr "or"
+
+#. module: product_low_turnover
+#: view:product.turnover.report:0
+msgid "See slow moving Products"
+msgstr "Afficher les produits à faible rotation"
+
