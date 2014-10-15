@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_product_eventful_report" model="ir.ui.view">
+            <field name="name">product.eventful.report.form</field>
+            <field name="model">product.eventful.report</field>
+            <field name="arch" type="xml">
+                <form string="Product Report" version="7.0">
+                    <group>
+                        <field name="date_from" class="oe_inline" required="1"/>
+                        <field name="date_to" class="oe_inline" required="1"/>
+                    </group>
+                    <footer>
+                        <button string="See non Eventful Products" name="product_report_open_window" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+         <record id="action_product_eventful_report_wizard" model="ir.actions.act_window">
+            <field name="name">List of non eventful products</field>
+            <field name="res_model">product.eventful.report</field>
+            <field name="view_id" ref="view_product_eventful_report"/>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem
+            action="action_product_eventful_report_wizard"
+            id="menu_non_eventual_product"
+            parent="product_report_menu.menu_report"
+            sequence="6"
+         />
+    </data>
+</openerp>

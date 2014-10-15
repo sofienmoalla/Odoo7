@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="product_not_eventful_form_view" model="ir.ui.view">
+            <field name="name">product.not.eventful.form</field>
+            <field name="model">product.not.eventful</field>
+            <field name="arch" type="xml">
+                <search string="Product">
+                   <field name="product_id"/>
+                   <separator/>                
+                   <field name="categ_id"/>
+                   <separator/>                
+                   <field name="product_brand_id"/>
+                   <group  expand='0' string='Group by...'>
+                       <filter string='Category' context="{'group_by' : 'categ_id'}"/>
+                       <filter string='Brand' context="{'group_by' : 'product_brand_id'}"/>
+                   </group>
+                </search>
+            </field>
+        </record>
+    
+        <record id="product_not_eventful_tree_view" model="ir.ui.view">
+            <field name="name">product.not.eventful.tree</field>
+            <field name="model">product.not.eventful</field>
+            <field name="arch" type="xml">
+                <tree string="Product Report">
+                    <field name="product_id"/>
+                    <field name="qty_available"/>
+                    <field name="categ_id"/>
+                    <field name="product_brand_id"/>
+                    <field name="list_price"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_product_not_eventful" model="ir.actions.act_window">
+            <field name="name">Non Eventful Products</field>
+            <field name="res_model">product.not.eventful</field>
+            <field name="context">{'default_uid':uid}</field>
+            <field name="search_view_id" ref="product_not_eventful_form_view"/>
+            <field name="view_id" ref="product_not_eventful_tree_view"/>
+            <field name="view_mode">tree</field>
+        </record>
+
+    </data>
+</openerp>
